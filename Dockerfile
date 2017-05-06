@@ -29,8 +29,6 @@ RUN chmod +x /usr/local/bin/entrypoint.sh
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
-ENV NODE_ENV=production
-
 EXPOSE 8000
 
 CMD botio start -u $GITHUB_USER -p $GITHUB_PASS $DEBUG
