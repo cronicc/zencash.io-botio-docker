@@ -4,7 +4,7 @@ MAINTAINER cronicc@protonmail.com
 
 ENV DEBIAN_FRONTEND=noninteractive 
 
-RUN apt-get -y update 
+RUN apt-get update \
     && apt-get --no-install-recommends -y install apt-utils \
     && apt-get -y upgrade \
     && apt-get --no-install-recommends -y install build-essential git ruby-dev nodejs-legacy npm \
